@@ -1,0 +1,23 @@
+.parallax-section {
+  position: relative;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.parallax-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(199, 91, 18, 0.3);
+}
+.parallax-content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  max-width: 800px;
+  text-align: center;
+  color: var(--text-light);
+}
