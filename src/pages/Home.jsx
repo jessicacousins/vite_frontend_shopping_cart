@@ -17,7 +17,7 @@ export default function Home() {
           style={{
             display: "inline-block",
             marginTop: "1.5rem",
-            backgroundColor: "var(--accent-dark)",
+            backgroundColor: "var(--accent-light)",
             color: "var(--primary-dark)",
             padding: "0.75rem 1.5rem",
             borderRadius: "0.75rem",
@@ -28,7 +28,7 @@ export default function Home() {
             (e.currentTarget.style.backgroundColor = "var(--accent)")
           }
           onMouseLeave={(e) =>
-            (e.currentTarget.style.backgroundColor = "var(--accent-dark)")
+            (e.currentTarget.style.backgroundColor = "var(--accent-light)")
           }
         >
           Start Shopping
@@ -118,7 +118,9 @@ export default function Home() {
             color: "#666",
           }}
         >
-          <p>&copy; {new Date().getFullYear()} Local Market. All rights reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Local Market. All rights reserved.
+          </p>
           <p>
             <Link
               to="/privacy"
