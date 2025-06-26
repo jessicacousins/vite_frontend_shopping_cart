@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar.jsx";
 import Home from "./pages/Home.jsx";
 import Shop from "./pages/Shop.jsx";
 import Category from "./pages/Category.jsx";
+import CartPage from "./pages/CartPage.jsx";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/shop" element={<Shop />} />
             <Route path="/category/:categoryName" element={<Category />} />
+            <Route path="/cart" element={<CartPage />} />
             <Route
               path="*"
               element={

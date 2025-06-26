@@ -1,8 +1,13 @@
+
+import React, { useContext } from "react";
 import "./ProductCard.css";
+import { CartContext } from "../context/CartContext.jsx";
 
 export default function ProductCard({ product }) {
+  const { addItem } = useContext(CartContext);
+
   const handleAdd = () => {
-    alert(`Added "${product.name}" to cart.`);
+    addItem(product);
   };
 
   return (
