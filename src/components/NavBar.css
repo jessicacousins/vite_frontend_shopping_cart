@@ -29,12 +29,12 @@
 
 .nav-links {
   display: flex;
-  gap: 2rem; 
+  gap: 2rem;
 }
 
 .nav-link {
   color: var(--text-dark);
-  padding: 0.75rem 1rem; 
+  padding: 0.75rem 1rem;
   transition: color 0.2s, background 0.2s;
   border-radius: 0.5rem;
 }
@@ -48,19 +48,19 @@
   display: flex;
   align-items: center;
   position: relative;
-  margin-left: 2rem; 
+  margin-left: 2rem;
 }
 
 .cart-icon {
   color: var(--text-dark);
   position: relative;
   transition: color 0.2s, background 0.2s;
-  padding: 0.5rem; 
+  padding: 0.5rem;
   border-radius: 0.5rem;
 }
 
 .cart-icon:hover {
-  color: var(--primary-dark);
+  color: #029902;
   background: var(--accent-light);
 }
 
