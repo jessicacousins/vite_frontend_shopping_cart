@@ -78,10 +78,13 @@
   border-radius: 50%;
   transition: background 0.2s, color 0.2s;
   color: var(--text-dark);
+  font-weight: 900;
+  scale: 1;
 }
 .cart-icon:hover {
   background: var(--accent-light);
-  color: var(--primary-dark);
+  color: rgb(9, 136, 9);
+  scale: 1.1;
 }
 .cart-badge {
   position: absolute;
