@@ -1,8 +1,10 @@
 import React, { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import { CartContext } from "../context/CartContext.jsx";
 import "./CartPage.css";
 
 export default function CartPage() {
+  const navigate = useNavigate();
   const {
     cartItems,
     updateQuantity,
@@ -85,11 +87,8 @@ export default function CartPage() {
         <button className="clear-btn" onClick={clearCart}>
           Clear Cart
         </button>
-        {/* Placeholder checkout button */}
-        <button
-          className="checkout-btn"
-          onClick={() => alert("Proceed to checkout (not implemented).")}
-        >
+
+        <button className="checkout-btn" onClick={() => navigate("/checkout")}>
           Checkout
         </button>
       </div>

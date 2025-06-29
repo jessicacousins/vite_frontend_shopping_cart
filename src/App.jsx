@@ -5,6 +5,9 @@ import Home from "./pages/Home.jsx";
 import Shop from "./pages/Shop.jsx";
 import Category from "./pages/Category.jsx";
 import CartPage from "./pages/CartPage.jsx";
+import Login from "./pages/Login.jsx";
+import SignUp from "./pages/SignUp.jsx";
+import CheckOut from "./pages/CheckOut.jsx";
 
 export default function App() {
   return (
@@ -17,6 +20,9 @@ export default function App() {
             <Route path="/shop" element={<Shop />} />
             <Route path="/category/:categoryName" element={<Category />} />
             <Route path="/cart" element={<CartPage />} />
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/checkout" element={<CheckOut />} />
             <Route
               path="*"
               element={

@@ -1,0 +1,160 @@
+.checkout-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: var(--text-light);
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.checkout-title {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-dark);
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.checkout-form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.checkout-form legend {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--text-dark);
+}
+
+.checkout-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+}
+
+.checkout-form input,
+.checkout-form select {
+  margin-top: 0.25rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.checkout-form input:focus,
+.checkout-form select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(255, 140, 66, 0.2);
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.extras {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.coupon {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.coupon input {
+  flex: 1;
+}
+
+.coupon button {
+  padding: 0.75rem 1rem;
+  background: var(--primary);
+  color: var(--text-light);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.coupon button:hover {
+  background: var(--primary-dark);
+}
+
+.points {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-dark);
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.pay-btn {
+  flex: 1;
+  padding: 0.75rem;
+  background: var(--primary);
+  color: var(--text-light);
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.pay-btn:hover {
+  background: var(--primary-dark);
+}
+
+.signout-btn {
+  flex: 1;
+  padding: 0.75rem;
+  background: #ddd;
+  color: var(--text-dark);
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.signout-btn:hover {
+  background: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .row {
+    flex-direction: column;
+  }
+  .actions {
+    flex-direction: column;
+  }
+}
