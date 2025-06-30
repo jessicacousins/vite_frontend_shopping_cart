@@ -33,64 +33,6 @@ export default function Home() {
         >
           Start Shopping
         </Link>
-
-        {/* Auth Buttons */}
-        <div
-          style={{
-            display: "flex",
-            gap: "1rem",
-            marginTop: "1.5rem",
-            flexWrap: "wrap",
-            justifyContent: "center",
-          }}
-        >
-          <Link
-            to="/login"
-            style={{
-              padding: "0.5rem 1.25rem",
-              borderRadius: "0.75rem",
-              border: "2px solid var(--text-light)",
-              background: "rgba(255,255,255,0.2)",
-              color: "var(--text-light)",
-              fontWeight: 600,
-              textDecoration: "none",
-              transition: "background 0.2s, color 0.2s",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.background = "var(--text-light)";
-              e.currentTarget.style.color = "var(--primary-dark)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.background = "rgba(255,255,255,0.2)";
-              e.currentTarget.style.color = "var(--text-light)";
-            }}
-          >
-            Login
-          </Link>
-          <Link
-            to="/signup"
-            style={{
-              padding: "0.5rem 1.25rem",
-              borderRadius: "0.75rem",
-              border: "2px solid var(--text-light)",
-              background: "transparent",
-              color: "var(--text-light)",
-              fontWeight: 600,
-              textDecoration: "none",
-              transition: "background 0.2s, color 0.2s",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.background = "var(--text-light)";
-              e.currentTarget.style.color = "var(--primary-dark)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.background = "transparent";
-              e.currentTarget.style.color = "var(--text-light)";
-            }}
-          >
-            Sign Up
-          </Link>
-        </div>
       </ParallaxSection>
 
       <section
@@ -165,6 +107,63 @@ export default function Home() {
         <p style={{ marginTop: "1rem", fontSize: "1rem" }}>
           Locally sourced. Handpicked. Delivered with care.
         </p>
+            {/* Auth Buttons */}
+            <div
+          style={{
+            display: "flex",
+            gap: "1rem",
+            marginTop: "1.5rem",
+            flexWrap: "wrap",
+            justifyContent: "center",
+          }}
+        >
+          <Link
+            to="/login"
+            style={{
+              padding: "0.5rem 1.25rem",
+              borderRadius: "0.75rem",
+              border: "2px solid var(--text-light)",
+              background: "rgba(255,255,255,0.2)",
+              color: "var(--text-light)",
+              fontWeight: 600,
+              textDecoration: "none",
+              transition: "background 0.2s, color 0.2s",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.background = "var(--text-light)";
+              e.currentTarget.style.color = "var(--primary-dark)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.background = "rgba(255,255,255,0.2)";
+              e.currentTarget.style.color = "var(--text-light)";
+            }}
+          >
+            Login
+          </Link>
+          <Link
+            to="/signup"
+            style={{
+              padding: "0.5rem 1.25rem",
+              borderRadius: "0.75rem",
+              border: "2px solid var(--text-light)",
+              background: "transparent",
+              color: "var(--text-light)",
+              fontWeight: 600,
+              textDecoration: "none",
+              transition: "background 0.2s, color 0.2s",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.background = "var(--text-light)";
+              e.currentTarget.style.color = "var(--primary-dark)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.background = "transparent";
+              e.currentTarget.style.color = "var(--text-light)";
+            }}
+          >
+            Sign Up
+          </Link>
+        </div>
       </ParallaxSection>
       <footer>
         <section
