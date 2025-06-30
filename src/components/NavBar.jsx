@@ -16,6 +16,10 @@ export default function NavBar() {
   const navLinks = [
     { name: "Home", to: "/" },
     { name: "Shop", to: "/shop" },
+    { name: "Checkout", to: "/checkout" },
+    { name: "Community", to: "/community" },
+    { name: "Login", to: "/login" },
+    { name: "Signup", to: "/signup" },
   ];
 
   const { totalItems } = useContext(CartContext);
