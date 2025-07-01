@@ -20,6 +20,7 @@ export default function NavBar() {
     { name: "Community", to: "/community" },
     { name: "Login", to: "/login" },
     { name: "Signup", to: "/signup" },
+    { name: "Profile", to: "/Profile" },
   ];
 
   const { totalItems } = useContext(CartContext);
