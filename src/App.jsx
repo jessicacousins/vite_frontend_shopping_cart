@@ -10,6 +10,7 @@ import SignUp from "./pages/SignUp.jsx";
 import CheckOut from "./pages/CheckOut.jsx";
 import Community from "./pages/Community.jsx";
 import Calendar from "./pages/Calendar.jsx";
+import Profile from "./pages/Profile.jsx";
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
             <Route path="/checkout" element={<CheckOut />} />
             <Route path="/community" element={<Community />} />
             <Route path="/calendar" element={<Calendar />} />
+            <Route path="/profile" element={<Profile />} />
             <Route
               path="*"
               element={
