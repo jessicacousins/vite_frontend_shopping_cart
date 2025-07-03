@@ -72,6 +72,7 @@ export default function Home() {
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 transition: "transform 0.2s",
+                border: "3px solid #000",
               }}
               onMouseEnter={(e) =>
                 (e.currentTarget.style.transform = "scale(1.05)")
@@ -107,8 +108,8 @@ export default function Home() {
         <p style={{ marginTop: "1rem", fontSize: "1rem" }}>
           Locally sourced. Handpicked. Delivered with care.
         </p>
-            {/* Auth Buttons */}
-            <div
+        {/* Auth Buttons */}
+        <div
           style={{
             display: "flex",
             gap: "1rem",
