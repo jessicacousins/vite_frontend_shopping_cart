@@ -72,7 +72,7 @@ export default function Home() {
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 transition: "transform 0.2s",
-                border: "3px solid #000",
+                border: "3px solid #e4990f",
               }}
               onMouseEnter={(e) =>
                 (e.currentTarget.style.transform = "scale(1.05)")

@@ -83,7 +83,7 @@
 }
 .cart-icon:hover {
   background: var(--accent-light);
-  color: rgb(9, 136, 9);
+  color: #098809;
   scale: 1.1;
 }
 .cart-badge {
